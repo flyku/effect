@@ -1,0 +1,95 @@
+/*轮播图*/
+.slider{
+    width: 100%;
+    height: 450px;
+    margin-top: 10px;
+}
+
+.slideBox{
+    width: 1190px;
+    height: 450px;
+    position: relative;
+    overflow:hidden;
+}
+.slideBox .bd li{ float: left; }
+
+.slideBox .slide-arrow{
+    display: block;
+    width: 40px;
+    height: 64px;
+    /*padding:10px 5px;*/
+    position: absolute;
+    top: 50%;
+    margin-top:-32px;
+    text-align: center;
+    line-height: 64px;
+    color:#dfdddf;
+    z-index:5;
+    /*background: rgba(0,0,0,.2);*/
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#33000000,endcolorstr=#33000000);!*支持rgba的浏览器*!*/
+    /*font:400 40px/64px "simsun";*/
+    /*cursor: pointer;*/
+}
+
+.slideBox .prev{
+    left:0;
+    background: url(../images/left-arrow.png) no-repeat;
+    z-index: 1;
+}
+.slideBox .next{
+    right:0;
+    background: url(../images/right-arrow.png) no-repeat;
+    z-index: 1;
+}
+/*.slideBox .slide-arrow:hover{*/
+    /*background: rgba(0,0,0,.3);  !*支持rgba的浏览器*!*/
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#4c000000,endcolorstr=#4c000000);!*支持rgba的浏览器*!*/
+    /*color:#ffffff;*/
+/*}*/
+.slideBox .prev:hover{
+    background: url(../images/click-left-arrow.png) no-repeat;
+    z-index: 1;
+}
+.slideBox .next:hover{
+    background: url(../images/click-right-arrow.png) no-repeat;
+    z-index: 1;
+}
+.slideBox .hd{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    position: absolute;
+    /*right: 5px;*/
+    bottom: 23px;
+    z-index: 1;
+}
+.slideBox .dots{
+    /*position: absolute;*/
+    /*bottom: 23px;*/
+    /*display: block;*/
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.dots li {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    line-height: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #e7e7e7;
+
+}
+.dots li.on {
+    background: #ff2d4b;
+    width: 15px;
+    height: 8px;
+
+}

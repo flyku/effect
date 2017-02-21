@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>验证</title>
+	<script type="text/javascript" src="./jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="./jquery.validate.js"></script>
+	<script type="text/javascript" src="./jquery.metadata.js"></script>
+	<style type="text/css">
+		label.error{
+			color:#f00;
+			font-size: 12px;
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form action="" id="form" name="form">
+		<table>	
+			<tr>
+				<td>用户名</td>
+				<td><input type="text" name="username" id="username" class="required"></td>
+				<!-- <td><input type="text" name="username" id="username" class="{required:true}"></td> -->
+			</tr>
+			<tr>	
+				<td>电子邮箱</td>
+				<td><input type="text" name="email" id="email" class="required email"></td>
+				<!-- <td><input type="text" name="email" id="email" class="{required:true,email:true}"></td> -->
+			</tr>
+			<tr>
+				<td>手机号码</td>
+				<td><input type="text" name="telphone" id="telphone" class="required phone">
+				<!-- <td><input type="text" name="telphone" id="telphone" class="{required:true,phone:true}"></td> -->
+			</tr>
+			<tr>
+				<td>年龄</td>
+				<td><input type="text" name="age" id="age" class="{required:true,phone:true}">
+				<!-- <td><input type="text" name="telphone" id="telphone" class="{required:true,phone:true}"></td> -->
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="确认" id="btn"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+<script type="text/javascript">
+	$(function(){
+        $("#form").validate();
+    });
+</script>
+</html>

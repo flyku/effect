@@ -1,0 +1,107 @@
+.page .p-wrap {
+    float: right;
+}
+.page .p-num .pn-next.disabled, .page .p-num .pn-prev.disabled {
+    background: 0 0;
+    background: #fff;
+    cursor: default;
+}
+.page .p-num a {
+    color: #333;
+    border: 1px solid #ddd;
+ }
+.page .p-num a, .page .p-num b {
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 14px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.page .p-num .pn-prev i {
+    padding-left: 0;
+}
+.page .p-num .pn-next i, .page .p-num .pn-prev i {
+    vertical-align: middle;
+    font-style: normal;
+    font-size: 16px;
+    font-family: "\5b8b\4f53";
+    padding: 0 5px;
+    color: #ccc;
+}
+.page .p-num .pn-next em, .page .p-num .pn-prev em {
+    vertical-align: middle;
+}
+.page .p-num .pn-next.disabled em, .page .p-num .pn-next.disabled i, .page .p-num .pn-prev.disabled em, .page .p-num .pn-prev.disabled i {
+    color: #ccc;
+}
+.page .p-num a.curr {
+    border: 0 none;
+    padding: 1px 15px;
+    background: 0 0;
+    filter: none;
+    color: #e4393c;
+    cursor: default;
+}
+.page .p-num a {
+    color: #333;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    background-repeat: repeat-x;
+}
+.page .p-num .pn-break {
+    color: #ccc;
+}
+.page .p-skip {
+    float: left;
+    margin-left: 20px;
+}
+.page .p-skip em {
+    float: left;
+    line-height: 38px;
+    font-size: 14px;
+}
+.page .p-skip em {
+    line-height: 38px;
+    font-size: 14px;
+}
+.page .p-skip .input-txt {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+.page .input-txt {
+    border: 1px solid #CCC;
+    padding: 3px;
+}
+.page .p-skip .btn {
+    float: left;
+    height: 27px;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 27px;
+}
+.page .btn-default {
+    border: 1px solid #DDD;
+    padding: 4px 13px 5px;
+    color: #666;
+    background-color: #f7f7f7;
+    background-repeat: repeat-x;
+}
+
+.page .btn {
+    display: inline-block;
+    border-radius: 2px;
+    background: #F7F7F7;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.page .p-num a:hover {
+    text-decoration: none;
+    box-shadow: 0 1px 1px rgba(0,1,1,.08);
+}

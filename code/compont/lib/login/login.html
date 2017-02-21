@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录</title>
+    <link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="reg-form fl">
+        <form action="" id="register-form" method="post" novalidate="novalidate">    <div class="form-item form-item-account pending" id="form-item-account">
+                <label>用　户　名</label>
+                <input class="text-positon" maxlength="20" value="您的账户名和登录名">
+            </div>
+            <div class="input-tip">
+                <span></span>
+            </div>
+            <div class="form-item" style="z-index: 12;">
+                <label>设 置 密 码</label>
+                <input class="text-positon" value="建议至少使用两种字符组合">
+            </div>
+            <div class="input-tip"><span id="form-pwd-error" class="error"></span></div>
+            <div class="form-item" style="z-index: 12;">
+                <label>确 认 密 码</label>
+                <input class="text-positon" value="请再次输入密码">                                      
+            </div>
+            <div class="input-tip">
+                <span></span>
+            </div>
+            <div class="item-email-wrap">
+                <div class="form-item">
+                    <label>邮 箱 验 证</label>
+                    <input class="text-positon" value="建议使用常用邮箱">
+                    <ul class="suggest-container email-suggest">
+                        <li class="">
+                            <div class="value">@qq.com</div>
+                        </li>
+                        <li class="">
+                            <div class="value">@163.com</div>
+                        </li>
+                        <li class="">
+                            <div class="value">@126.com</div>
+                        </li>
+                        <li class="">
+                            <div class="value">@Sina.com</div>
+                        </li>
+                        <li class="">
+                            <div class="value">@Sohu.com</div>
+                        </li>
+                        <li class="suggest-li-last ">
+                            <div class="value">@Gmail.com</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="input-tip">
+                    <span></span>
+                </div>
+                <div class="orPhone">或 <a href="javascript:;">手机验证</a></div>
+            </div>
+            <div class="item-phone-wrap">
+                <div class="form-item form-item-phone">
+                    <label class="select-country" id="select-country" country_id="0086">手机号
+                        <a href="javascript:void(0)" class="arrow"></a>
+                    </label>
+                    <input class="text-positon" value="建议使用常用手机">
+                    <i class="i-status"></i>
+                    <div id="scrollbar1">
+                        <div class="scrollbar">
+                            <div class="track">
+                                <div class="thumb">
+                                    <div class="end"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-tip">
+                    <span></span>
+                </div>
+                <div class="orEmail">或 <a href="javascript:;">邮箱验证</a></div>
+            </div>
+            <div class="form-item form-item-authcode">
+                <label>验　证　码</label>
+                <input class="text-positon" value="请输入验证码">
+                <img class="img-code" title="换一换" id="imgAuthCode">
+            </div>
+            <div class="input-tip">
+                <span></span>
+            </div>
+            <div class="form-item form-item-phonecode">
+                <label>手机验证码</label>
+                <input class="text-positon" placeholder="请输入手机验证码">
+                <button id="getPhoneCode" class="btn-phonecode" type="button">获取验证码</button>
+            </div>
+            <div class="input-tip">
+                <span></span>
+            </div>
+            <div class="form-agreen">
+                <div>
+                    <input type="checkbox" name="agreen" checked="">我已阅读并同意<a href="javascript:;" id="protocol">《京东用户注册协议》</a> </div>
+                <div class="input-tip">
+                    <span></span>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn-register">立即注册</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/*头部nav部分start*/
+#shortcut-2014 {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #F1F1F1;
+}
+#shortcut-2014 .w {
+    background: #F1F1F1;
+}
+/*导航左边s*/
+#shortcut-2014 #ttbar-mycity {
+    padding-left: 0;
+}
+#shortcut-2014 li.dorpdown {
+    z-index: 13;
+}
+#shortcut-2014 li {
+    float: left;
+    height: 30px;
+    padding: 0 2px;
+}
+.dorpdown {
+    position: relative;
+}
+#shortcut-2014 .dorpdown-layer {
+    top: 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+#shortcut-2014 .dd {
+    line-height: 24px;
+}
+.dorpdown-layer {
+    display: none;
+    position: absolute;
+}
+#shortcut-2014 #ttbar-mycity .dt {
+    padding: 0 25px 0 10px;
+}
+#shortcut-2014 .dt {
+    float: left;
+    padding: 0 8px;
+}
+
+.cw-icon {
+    position: relative;
+    cursor: default;
+    zoom: 1;
+}
+#shortcut-2014 .ci-right {
+    top: 12px;
+    right: 8px;
+    height: 7px;
+    overflow: hidden;
+    font: 400 15px/15px consolas;
+    color: #6A6A6A;
+}
+
+.cw-icon .i, .cw-icon i {
+    display: block;
+    position: absolute;
+}
+#shortcut-2014 .ci-right s {
+    position: relative;
+    top: -7px;
+    text-decoration: none;
+}
+
+#shortcut-2014 #ttbar-mycity .item {
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+}
+#shortcut-2014 #ttbar-mycity .item a.selected {
+    background: #C81623;
+    color: #fff;
+}
+#shortcut-2014 #ttbar-mycity .item a {
+    float: left;
+    padding: 0 8px;
+}
+/*导航右边s*/
+#shortcut-2014 #ttbar-login {
+    margin-right: 10px;
+}
+#shortcut-2014 #ttbar-login .link-login {
+    font-family: "verdana,simsun";
+}
+#shortcut-2014 .style-red {
+    color: #C81623;
+}
+#shortcut-2014 li.spacer {
+    width: 1px;
+    height: 12px;
+    margin-top: 9px;
+    padding: 0;
+    background: #ddd;
+    overflow: hidden;
+}
+/*我的京东*/
+#ttbar-myjd .dt {
+    width: 49px;
+    padding-right: 25px;
+}
+
+/*手机京东*/
+#shortcut-2014 #ttbar-apps .dt {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#shortcut-2014 #ttbar-apps .dt .ci-left {
+    top: 5px;
+    left: 7px;
+    width: 15px;
+    height: 20px;
+    background: url(//misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 0 no-repeat;
+}
+/*关注京东*/
+#shortcut-2014 #ttbar-atte .dt, #shortcut-2014 #ttbar-serv .dt {
+    width: 49px;
+    padding-right: 25px;
+}
+#shortcut-2014 #ttbar-atte .dd-spacer, #shortcut-2014 #ttbar-serv .dd-spacer {
+    left: 0;
+    width: 82px;
+}
+/*网站导航*/
+#shortcut-2014 #ttbar-navs .dt {
+    width: 49px;
+    padding-right: 25px;
+}
+
+
+
+/*头部nav部分end*/

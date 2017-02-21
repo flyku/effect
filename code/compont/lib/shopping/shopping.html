@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="css/shopping.css">
+	<script src="../jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<!--购物车列表-->
+    <div class="dbx mcart" style="width:970px;margin:0 auto;">
+        <div class="g_lists">
+            <div class="confirm_Mess">
+                全部商品
+                <i class="lb">(</i>
+                <span class="g_n" >9</span>
+                <i class="rb">)</i>
+            </div>
+            <div class="g_infos">
+                <span class="g_name">商品信息</span>
+                <span class="price">单价（积分）</span>
+                <span class="num">数量</span>
+                <span class="total">实付积分</span>
+                <span class="op">操作</span>
+            </div>
+            <div class="g_items  clearfix">
+                <ul id="all_goods" class="clearfix">
+                    <li class="g_lists_li clearfix">
+                        <input type="checkbox" class="ck fl check">
+                        <!--<span class="ck fl checkbox check"></span>-->
+                        <div class="name_list clearfix">
+                            <a href="../goodsDetail.html" class="gPic"><img src="../images/addwdincart.png" width="48px" height="48px" alt=""></a>
+                            <a href="../goodsDetail.html" class="gdname">商品名称商品名称</a>
+                            <span class="off_shelf" style="display: none">此商品已失效</span>
+                        </div>
+
+                        <div class="price_list">20</div>
+                        <div class="num_list">
+                            <a  class="operationBox subtract" href="javascript:void(0);">-</a>
+                            <input type="text" class="num_input" value="1">
+                            <a  class="operationBox add" href="javascript:void(0);">+</a>
+                        </div>
+                        <div class="total_list">500</div>
+                        <div class="ns">
+                            <a class="mv">移入收藏夹</a><br>
+                            <a class="cl" >删除</a>
+                        </div>
+                    </li>
+                    <li class="g_lists_li clearfix">
+                        <input type="checkbox" class="ck fl check">
+                        <!--<span class="ck fl checkbox check"></span>-->
+                        <div class="name_list clearfix">
+                            <a href="../goodsDetail.html" class="gPic"><img src="../images/addwdincart.png" width="48px" height="48px" alt=""></a>
+                            <a href="../goodsDetail.html" class="gdname">商品名称商品名称</a>
+                            <span class="off_shelf" style="display: none">此商品已失效</span>
+                        </div>
+
+                        <div class="price_list">20</div>
+                        <div class="num_list">
+                            <a  class="operationBox subtract" href="javascript:void(0);">-</a>
+                            <input type="text" class="num_input" value="1">
+                            <a  class="operationBox add" href="javascript:void(0);">+</a>
+                        </div>
+                        <div class="total_list">500</div>
+                        <div class="ns">
+                            <a class="mv">移入收藏夹</a><br>
+                            <a class="cl" >删除</a>
+                        </div>
+                    </li>
+                    <li class="g_lists_li clearfix">
+                        <input type="checkbox" class="ck fl check">
+                        <!--<span class="ck fl checkbox check"></span>-->
+                        <div class="name_list clearfix">
+                            <a href="../goodsDetail.html" class="gPic"><img src="../images/addwdincart.png" width="48px" height="48px" alt=""></a>
+                            <a href="../goodsDetail.html" class="gdname">商品名称商品名称</a>
+                            <span class="off_shelf" style="display: none">此商品已失效</span>
+                        </div>
+
+                        <div class="price_list">20</div>
+                        <div class="num_list">
+                            <a  class="operationBox subtract" href="javascript:void(0);">-</a>
+                            <input type="text" class="num_input" value="1">
+                            <a  class="operationBox add" href="javascript:void(0);">+</a>
+                        </div>
+                        <div class="total_list">500</div>
+                        <div class="ns">
+                            <a class="mv">移入收藏夹</a><br>
+                            <a class="cl" >删除</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="all_lists_info clearfix">
+                    <div class="userOp fl clearfix">
+                        <div class="chAll fl">
+                            <input type="checkbox" class="c_box  check-all">
+                            全选
+                        </div>
+                        <div class="canc fl">删除</div>
+                        <div class="w_line fl"></div>
+                        <div class="cllo fl">移入收藏夹</div>
+                    </div>
+                    <div class="cgfo fr clearfix">
+                        <div class="allNum fl">已选择<i class="selectedTotal">0</i>件</div>
+                        <div class="cg_line fl"></div>
+                        <div class="allCredits fl"><i class="priceTotal">0</i>积分</div>
+                        <a href="../payment.html" class="payment fl">下订单</a>
+                        <div class="remain_credits">您的积分余额不足</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--遮罩层-->
+	<div  class="ks-dialog-mask ks-overlay-mask"></div>
+	<!--点击全部删除按钮弹出框-->
+	<div class="cart-dialog" id="ks-component01">
+	    <div class="dialog-titile">删除商品</div>
+	    <div id="c_close"></div>
+	    <div class="p-text">
+	        确定要删除这些商品吗？
+	    </div>
+	    <div class="p-btns">
+	        <button class="sub-btn1">确定</button>
+	        <button class="can-btn1">取消</button>
+	    </div>
+	</div>
+	<!--点击单行删除按钮弹出框-->
+	<div class="cart-preDialog" id="ks-component02">
+	    <div class="preDialog-titile">删除商品</div>
+	    <div id="e_close"></div>
+	    <div class="p-text">
+	        确定要删除该商品吗？
+	    </div>
+
+	    <div class="p-btns">
+	        <button class="sub-btn2">确定</button>
+	        <button class="can-btn2">取消</button>
+	    </div>
+	</div>
+	<!--个人中心我的购物车当没有选择商品时，用户点击全部删除按钮弹出提示框-->
+	<div class="promote-dialog" id="ks-component03">
+	    <div class="prom-titile">提示信息</div>
+	    <div id="d_close"></div>
+	    <div class="p-text">
+	        请选择商品
+	    </div>
+	</div>
+	<!--点击移入收藏夹按钮弹出框-->
+	<div class="moveColl-dialog" id="ks-component04">
+	    <div class="moveColl-titile">移入收藏夹</div>
+	    <div id="f_close"></div>
+	    <div class="p-text">
+	        确定要将这些商品移入收藏夹吗？
+	    </div>
+	    <div class="ftx">移动后选中商品将不在购物车中显示。</div>
+	    <div class="p-btns">
+	        <button class="sub-btn3">确定</button>
+	        <button class="can-btn3">取消</button>
+	    </div>
+
+	</div>
+	<!--点击单行移入收藏夹按钮弹出框-->
+	<div class="preMoveColl-dialog" id="ks-component05">
+	    <div class="preMoveColl-titile">移入收藏夹</div>
+	    <div id="pre_close"></div>
+	    <div class="p-text">
+	        确定要将该商品移入收藏夹吗？
+	    </div>
+	    <div class="ftx-1">移入后改商品将不在购物车中显示。</div>
+	    <div class="p-btns">
+	        <button class="sub-btn4">确定</button>
+	        <button class="can-btn4">取消</button>
+	    </div>
+
+	</div>
+</body>
+<script src="js/shopping.js"></script>
+</html>

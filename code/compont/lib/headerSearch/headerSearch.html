@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页核心搜索部分</title>
+    <link rel="stylesheet" href="../../css/base.css"/>
+    <link rel="stylesheet" href="css/headerSearch.css"/>
+    <script src="../jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+<!--首页核心搜索部分start-->
+<div class="w" id="main-search">
+    <!--左侧logo-->
+    <div id="logo-2014">
+        <a href="javascript:void(0)" class="logo">logo</a>
+    </div>
+    <!--中间搜索框-->
+    <div id="search-2014">
+        <!--下拉框-->
+        <ul id="shelper" class="hide">
+            <li id="d_0"  title="我们仨">
+                <div class="search-item">我们<strong>仨</strong></div>
+                <div class="search-count">约104个商品</div>
+            </li>
+            <li id="d_1"  title="我们仨">
+                <div class="search-item">我们<strong>仨</strong></div>
+                <div class="search-count">约104个商品</div>
+            </li>
+            <li class="close">关闭</li>
+        </ul>
+        <!--搜索框-->
+        <div class="form">
+            <input type="text" id="key" class="text">
+            <button class="button cw-icon"><i></i>搜索</button>
+        </div>
+    </div>
+    <!--购物车-->
+    <div id="myCart" class="dorpdown">
+        <div class="cw-icon">
+            <i class="ci-left"></i>
+            <i class="ci-right">&gt;</i><i class="ci-count" id="shopping-amount">1</i>
+            <a target="_blank" href="javascript:void(0)">我的购物车</a>
+        </div>
+        <!--鼠标悬浮到购物车，有下拉内容-->
+        <div class="dorpdown-layer">
+            <div class="spacer"></div>
+            <!--没有商品显示-->
+            <div class="prompt">
+                <div class="nogoods"><b></b>购物车中还没有商品，赶紧选购吧！</div>
+            </div>
+            <!--如果有产品的列表-->
+            <div id="settleup-content">
+                <div class="smt">
+                    <h4 class="fl">最新加入的商品</h4>
+                </div>
+                <div class="smc">
+                    <ul id="mcart-sigle">
+                        <li>
+                            <div class="p-img fl">
+                                <a href="javascript:;" target="_blank">
+                                    <img src="73.jpg" width="50" height="50" alt="">
+                                </a>
+                            </div>
+                            <div class="p-name fl">
+                                <a href="javascript:;" title="【京东超市】蓝月亮 手洗专用洗衣液翻盖（风清白兰）500g/瓶" target="_blank">【京东超市】蓝月亮
+                                    手洗专用洗衣液翻盖（风清白兰）500g/瓶
+                                </a>
+                            </div>
+                            <div class="p-detail fr ar">
+                                <span class="p-price"><strong>￥12.80</strong>×1</span>
+                                <br>
+                                <a class="delete" data-id="1165762" data-type="RemoveProduct" href="javascript:void(0)">删除</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img fl">
+                                <a href="javascript:;" target="_blank">
+                                    <img src="73.jpg" width="50" height="50" alt="">
+                                </a>
+                            </div>
+                            <div class="p-name fl">
+                                <a href="javascript:;" title="【京东超市】蓝月亮 手洗专用洗衣液翻盖（风清白兰）500g/瓶" target="_blank">【京东超市】蓝月亮
+                                    手洗专用洗衣液翻盖（风清白兰）500g/瓶
+                                </a>
+                            </div>
+                            <div class="p-detail fr ar">
+                                <span class="p-price"><strong>￥12.80</strong>×1</span>
+                                <br>
+                                <a class="delete" data-id="1165762" data-type="RemoveProduct" href="javascript:void(0)">删除</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img fl">
+                                <a href="javascript:;" target="_blank">
+                                    <img src="73.jpg" width="50" height="50" alt="">
+                                </a>
+                            </div>
+                            <div class="p-name fl">
+                                <a href="javascript:;" title="【京东超市】蓝月亮 手洗专用洗衣液翻盖（风清白兰）500g/瓶" target="_blank">【京东超市】蓝月亮
+                                    手洗专用洗衣液翻盖（风清白兰）500g/瓶
+                                </a>
+                            </div>
+                            <div class="p-detail fr ar">
+                                <span class="p-price"><strong>￥12.80</strong>×1</span>
+                                <br>
+                                <a class="delete" data-id="1165762" data-type="RemoveProduct" href="javascript:void(0)">删除</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul id="mcart-gift">
+                    </ul>
+                </div>
+                <div class="smb ar">
+                    <div class="p-total">共<b>1</b>件商品　共计<strong>￥ 12.80</strong>
+                    </div>
+                    <a href="javascript:;" title="去购物车" id="btn-payforgoods">去购物车</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--搜索框下面的热字列表-->
+    <div id="hotwords-2014">
+        <a href="javascript:void(0)" target="_blank" class="style-red">机票减500</a>
+        <a href="javascript:void(0)" target="_blank">私人影院</a>
+        <a href="javascript:void(0)" target="_blank">99减40</a>
+        <a href="javascript:void(0)" target="_blank">精选手机</a>
+        <a href="javascript:void(0)" target="_blank">1元拿走</a>
+        <a href="javascript:void(0)" target="_blank">骆驼祥子</a>
+        <a href="javascript:void(0)" target="_blank">早餐</a>
+        <a href="javascript:void(0)" target="_blank">0元试用</a>
+        <a href="javascript:void(0)" target="_blank">运动套装女</a>
+    </div>
+</div>
+
+<!--首页核心搜索部分end-->
+
+</body>
+</html>
+
+<script src="js/headerSearch.js"></script>

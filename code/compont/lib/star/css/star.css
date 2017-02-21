@@ -1,0 +1,88 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+#xzw_starBox {
+    margin-top: 15px;
+    margin-left: 40px;
+    position: relative;
+    width: 75px;
+    float: left;
+}
+
+#xzw_starBox .estar {
+    height: 14px;
+    width: 75px;
+    position: relative;
+    background: url(../images/123.png) repeat-x;
+    cursor: pointer;
+}
+
+#xzw_starBox .estar li {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+#xzw_starBox .estar li a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 5;
+}
+
+#xzw_starBox .estar li a:hover {
+    background: url(../images/123.png) 0 -14px repeat-x;
+    z-index: 3;
+    left: 0;
+}
+
+#xzw_starBox .estar a.one-star {
+    left: 0
+}
+
+#xzw_starBox .estar a.one-star:hover {
+    width: 15px;
+}
+
+#xzw_starBox .estar a.two-stars {
+    left: 15px;
+}
+
+#xzw_starBox .estar a.two-stars:hover {
+    width: 30px;
+}
+
+#xzw_starBox .estar a.three-stars {
+    left: 30px;
+}
+
+#xzw_starBox .estar a.three-stars:hover {
+    width: 45px;
+}
+
+#xzw_starBox .estar a.four-stars {
+    left: 45px;
+}
+
+#xzw_starBox .estar a.four-stars:hover {
+    width: 60px
+}
+
+#xzw_starBox .estar a.five-stars {
+    left: 60px
+}
+
+#xzw_starBox .estar a.five-stars:hover {
+    width: 75px
+}
+
+#xzw_starBox .current-rating {
+    background: url(../images/123.png) 0 -14px repeat-x;
+    position: absolute;
+    height: 14px;
+    z-index: 1;
+    top: 0;
+    left: 0
+}

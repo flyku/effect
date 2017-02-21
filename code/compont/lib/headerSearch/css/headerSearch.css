@@ -1,0 +1,306 @@
+/*左侧企业logo*/
+#main-search{
+    height:100px;
+}
+#main-search #logo-2014 {
+    position: relative;
+    z-index: 12;
+    float: left;
+    width: 362px;
+    height: 60px;
+    padding: 20px 0;
+}
+#main-search #logo-2014 .logo {
+    display: block;
+    width: 270px;
+    height: 60px;
+    background: url(../images/logo-201305.png) no-repeat 0 0;
+    text-indent: -20000px;
+}
+/*中间搜索框*/
+#main-search #search-2014 {
+    position: relative;
+    z-index: 11;
+    float: left;
+    margin-top: 25px;
+    width: auto;
+}
+/*下拉框*/
+html #shelper {
+    width: 455px;
+}
+
+#shelper {
+    overflow: hidden;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    border: 1px solid #CCC;
+    background: #fff;
+}
+#shelper li {
+    overflow: hidden;
+    padding: 1px 6px;
+    line-height: 22px;
+    cursor: pointer;
+}
+#shelper .search-item {
+    float: left;
+    width: 190px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#shelper .search-count {
+    overflow: hidden;
+    color: #aaa;
+    text-align: right;
+}
+#shelper .close {
+    border-top: 1px solid #efefef;
+    text-align: right;
+}
+/*搜索框*/
+#main-search #search-2014 .form {
+    height: 36px;
+    width: auto;
+}
+#main-search #search-2014 .text {
+    float: left;
+    width: 446px;
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+    padding: 4px;
+    margin-bottom: 4px;
+    border-width: 2px 0 2px 2px;
+    border-color: #B61D1D;
+    border-style: solid;
+    outline: 0;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+#main-search #search-2014 .button {
+    float: left;
+    width: 82px;
+    height: 36px;
+    background: #B61D1D;
+    border: none;
+    line-height: 1;
+    color: #fff;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    cursor: pointer;
+}
+#main-search #search-2014  .cw-icon {
+    position: relative;
+    zoom: 1;
+}
+#main-search #search-2014 .cw-icon i {
+    top: 0;
+    left: 0;
+    width: 82px;
+    height: 36px;
+}
+#main-search .cw-icon i {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
+#main-search .root61 #myCart-2014 {
+    margin-right: 65px;
+}
+/*购物车*/
+#main-search #myCart {
+    float: right;
+    z-index: 11;
+    height: 36px;
+    margin-top: 25px;
+}
+#main-search .dorpdown {
+    position: relative;
+}
+#main-search #myCart .cw-icon {
+    width: 75px;
+    height: 34px;
+    border: 1px solid #DFDFDF;
+    padding: 0 28px 0 36px;
+    background: #F9F9F9;
+    text-align: center;
+    line-height: 34px;
+}
+#main-search #myCart .ci-left {
+    top: 9px;
+    left: 18px;
+    width: 18px;
+    height: 16px;
+    background: url(../images/jd2015img.png) 0 -58px no-repeat;
+}
+#main-search #myCart .ci-right {
+    top: 11px;
+    right: 10px;
+    width: 7px;
+    height: 13px;
+    overflow: hidden;
+    font: 400 13px/13px simsun;
+    color: #999;
+}
+#main-search #myCart .ci-count {
+    position: absolute;
+    top: -4px;
+    left: 104px;
+    display: inline-block;
+    padding: 1px 2px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    background-color: #c81623;
+    border-radius: 7px 7px 7px 0;
+    min-width: 12px;
+    text-align: center;
+}
+/*购物车没有商品*/
+#main-search .dorpdown-layer {
+   position: absolute;
+}
+#main-search #myCart .dorpdown-layer {
+    display: none;
+    right: 0;
+    width: 308px;
+}
+#main-search #myCart:hover, #myCart:hover .dorpdown-layer {
+    display: block;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+#main-search #myCart .prompt {
+    padding: 10px 15px;
+}
+#main-search #settleu.hover .spacer, #myCart:hover .spacer {
+    position: absolute;
+    right: 0;
+    top: -7px;
+    width: 139px;
+    height: 12px;
+    background: #fff;
+}
+#main-search #myCart .nogoods {
+    padding-left: 30px;
+    height: 49px;
+    line-height: 49px;
+    overflow: hidden;
+    color: #999;
+}
+#main-search #myCart .nogoods b {
+    float: left;
+    width: 56px;
+    height: 49px;
+    background-image: url(../images/settleup-nogoods.png);
+}
+/*购物车内有商品*/
+#settleup-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background: #fff;
+}
+/*最新加入商品标题*/
+#settleup-content .smt {
+    height: 25px;
+    padding: 6px 8px;
+    line-height: 25px;
+}
+#settleup-content .smt h4{
+    font-weight: bold;
+}
+/*购物车商品*/
+#settleup-content .smc {
+    background: #fff;
+    height: auto!important;
+    max-height: 344px;
+    overflow-y: auto;
+    /*overflow: hidden;*/
+    zoom: 1;
+}
+#settleup-content ul {
+    margin-top: -1px;
+}
+#settleup-content li {
+    padding: 8px 10px;
+    border-top: 1px dotted #ccc;
+    overflow: hidden;
+    line-height: 17px;
+    vertical-align: bottom;
+}
+#settleup-content .p-img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin-right: 10px;
+    font-size: 0;
+}
+#settleup-content .p-name {
+    float: left;
+    width: 120px;
+    height: 52px;
+}
+.m, .mb, .mc, .mt, .p-detail, .p-img, .p-market, .p-name, .p-price, .sm, .smb, .smc, .smt {
+    overflow: hidden;
+}
+#settleup-content .p-detail {
+    float: right;
+    text-align: right;
+}
+#settleup-content .p-price {
+    font-weight: 700;
+}
+strong, b {
+    font-weight: bold;
+}
+/*去购物车样式*/
+#settleup-content .smb {
+    padding: 8px;
+    background: #F5F5F5;
+    overflow: hidden;
+    zoom: 1;
+}
+#settleup-content .smb .p-total {
+    float: left;
+    line-height: 29px;
+}
+#settleup-content .smb a {
+    float: right;
+    height: 29px;
+    padding: 0 10px;
+    background: #E4393C;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    line-height: 29px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    behavior:url(../htc/PIE.htc);
+}
+
+
+/*搜索下面的热字搜所*/
+#main-search #hotwords-2014 {
+    float: left;
+    width: 518px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+#main-search #hotwords-2014 a {
+    float: left;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+#main-search .style-red {
+    color: #C81623;
+}

@@ -1,0 +1,213 @@
+/*右侧样式*/
+.g-main2 .m-list {
+    float: right;
+    width: 100%;
+}
+.g-main2 .m-list .ml-wrap {
+    position: relative;
+    margin-left: 190px;
+    padding-bottom: 30px;
+}
+
+/*右侧中间核心商品列表*/
+@media screen and (max-width: 1410px) and (min-width: 1230px){
+    .goods-list-v1 .gl-warp {
+        width: 1040px;
+        margin-right: -20px;
+    }
+}
+.J_main .ml-wrap .goods-list-v1 {
+    height: auto;
+}
+.goods-list-v1.gl-type-3 .gl-item {
+    height: 416px;
+}
+@media screen and (max-width: 1410px) and (min-width: 1230px){
+    .goods-list-v1 .gl-item {
+        margin-right: 20px;
+    }
+}
+.goods-list-v1 .gl-item {
+     width: 240px;
+     float: left;
+     position: relative;
+     z-index: 1;
+     margin-top: 10px;
+
+}
+.goods-list-v1.gl-type-3 .gl-item .gl-i-wrap {
+    padding: 12px 9px;
+}
+.goods-list-v1 .gl-item .gl-i-wrap {
+    width: 220px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: #fff;
+    border: 1px solid #fff;
+    transition: border-color .1s ease;
+}
+/*商品图片*/
+.goods-list-v1.gl-type-3 .gl-item .p-img {
+    margin-bottom: 5px;
+}
+.goods-list-v1 .gl-item .p-img {
+    height: 220px;
+    padding: 0;
+    position: relative;
+}
+.goods-list-v1 .gl-item .p-img a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+/*商品价格*/
+.goods-list-v1 .gl-item .p-price {
+    position: relative;
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 0 8px;
+}
+.goods-list-v1 .gl-item .p-price strong {
+    float: left;
+    margin-right: 10px;
+    color: #e4393c;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Verdana;
+}
+/* 价格后面可扩展内容*/
+.goods-list-v1.gl-type-3 .gl-item .p-icons {
+    margin-bottom: 0;
+}
+.goods-list-v1 .gl-item .p-price .p-icons {
+    padding-top: 3px;
+}
+.goods-list-v1 .gl-item .p-icons {
+    overflow: hidden;
+    zoom: 1;
+    height: 16px;
+}
+.goods-list-v1 .gl-item .p-name {
+    height: 40px;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+.goods-list-v1.gl-type-3 .gl-item .p-name {
+    height: 20px;
+    line-height: 20px;
+    behavior: url(../htc/PIE.htc);
+}
+.goods-list-v1.gl-type-3 .gl-item .p-name-type-2 {
+    height: 40px;
+}
+/*商品名称*/
+.goods-list-v1 .gl-item .p-name em, .goods-list-v1 .gl-item .p-name i {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    -webkit-transition: height .08s ease;
+    -moz-transition: height .08s ease;
+    transition: height .08s ease;
+}
+.goods-list-v1 .gl-item .p-name-type-2 em, .goods-list-v1 .gl-item .p-name-type-2 i {
+    display: inline;
+}
+.goods-list-v1.gl-type-3 .gl-item .p-name em, .goods-list-v1.gl-type-3 .gl-item .p-name i {
+    display: inline;
+    height: auto;
+}
+.skcolor_ljg {
+    color: #e4393c;
+}
+/*评价*/
+.goods-list-v1 .gl-item .p-commit {
+    width: 100%;
+    height: 18px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.goods-list-v1 .gl-item .p-commit strong {
+    color: #a7a7a7;
+    font-weight: 400;
+}
+.goods-list-v1 .gl-item .p-commit strong a {
+    color: #005aa0;
+    font-family: verdana;
+    font-weight: 700;
+}
+/*收藏关注*/
+.goods-list-v1 .gl-item .p-focus {
+    position: absolute;
+    left: 165px;
+    top: 206px;
+    display: none;
+    z-index: 4;
+    /*opacity: 1;*/
+}
+.goods-list-v1 .gl-item .p-focus a {
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    border: medium none;
+    background: rgba(0,0,0,.7);
+    position: relative;
+    display: inline-block;
+    padding: 0 5px 0 25px;
+}
+.goods-list-v1 .gl-item .p-focus a i{
+    position: absolute;
+    display: block;
+    font-style: normal;
+    left: 4px;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    background: url(../images/search.ele.png) no-repeat;
+    background-position: 0 -413px;
+}
+
+/*公司名称*/
+.goods-list-v1 .gl-item .p-shop {
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.goods-list-v1 .gl-item .p-shop span {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+}
+
+
+/*鼠标移动上去特效加边框阴影*/
+.gl-item .gl-i-wrap:hover{
+    border-color: #e9e9e9;
+    box-shadow: 0 0 2px 2px #f8f8f8;
+}
+.gl-item .gl-i-wrap:hover .p-focus{
+    display: block;
+    opacity: 1;
+}
+/*鼠标移动上去字体变红*/
+.goods-list-v1 .gl-item .p-focus:hover a{
+    color: red;
+}
+.goods-list-v1 .gl-item .p-focus:hover a i{
+    background-position: 0 -436px;
+
+}
+
+.goods-list-v1 .gl-item .p-focus a i.active{
+    background: url(../images/search.ele.png) no-repeat;
+    background-position: 0 -436px;
+}  
+
+
+
+

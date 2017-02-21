@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>分页</title>
+    <link rel="stylesheet" href="../../css/base.css"/>
+    <link rel="stylesheet" href="css/pagination.css"/>
+    <script src="../jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+<!--pagination分页start-->
+<div class="page clearfix">
+    <div id="J_bottomPage" class="p-wrap">
+        <span class="p-num">
+            <a class="pn-prev disabled">
+                <i>&lt;</i><em>上一页</em>
+            </a>
+            <a href="javascript:;" class="p-cont curr">1</a>
+            <a href="javascript:;" class="p-cont">2</a>
+            <a href="javascript:;" class="p-cont">3</a>
+            <a href="javascript:;" class="p-cont">4</a>
+            <a href="javascript:;" class="p-cont">5</a>
+            <a href="javascript:;" class="p-cont">6</a>
+            <a href="javascript:;" class="p-cont">7</a>
+            <b class="pn-break">...</b>
+            <a class="pn-next" href="javascript:;" title="使用方向键右键也可翻到下一页哦">
+                <em>下一页</em>
+                <i>&gt;</i>
+            </a>
+        </span>
+        <span class="p-skip">
+            <em>共<b>80</b>页&nbsp;&nbsp;到第</em>
+            <input class="input-txt" type="text" value="1"><em>页</em>
+            <a class="btn btn-default" href="javascript:;">确定</a>
+        </span>
+    </div>
+</div>
+
+<!--pagination分页end-->
+
+</body>
+</html>
+<script src="js/pagination.js"></script>

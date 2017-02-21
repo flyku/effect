@@ -1,0 +1,643 @@
+/*我的购物车*/
+.g_lists{
+    padding-bottom: 30px;
+}
+
+.g_lists .confirm_Mess{
+    font:16px "microsoft yahei";
+    text-align: left;
+    /*padding-top: 40px;*/
+    padding-bottom: 20px;
+    /*border-bottom: solid 1px #E8E8E8;*/
+}
+.confirm_Mess .g_n,
+.confirm_Mess  .lb,
+.confirm_Mess  .rb{
+    color:#cccccc;
+}
+.g_infos{
+    padding-bottom: 9px;
+    border-bottom: solid 1px #E8E8E8;
+    font:12px "microsoft yahei";
+    color:#cccccc;
+}
+.g_infos .g_name{
+    display: inline-block;
+    width: 300px;
+    padding-left: 135px;
+}
+.g_infos .price{
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+}
+.g_infos .num{
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+}
+.g_infos .total{
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+}
+.g_infos .op{
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+}
+.g_lists_li{
+    width:100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-family: "microsoft yahei";
+    border-bottom: 1px solid #E8E8E8;
+    position: relative;
+    float: left;
+}
+/*.g_lists_li:hover{*/
+    /*background-color: #F7F7F7;*/
+/*}*/
+
+.g_lists_li div {
+    float: left;
+}
+.g_lists_li .ck{
+    height:44px;
+    line-height:44px;
+    margin-left:14px;
+}
+.g_lists_li .name_list{
+    margin-left: 45px;
+    width: 370px;
+}
+.g_lists_li .name_list .gPic{
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+
+}
+.g_lists_li .name_list img{
+    display: inline-block;
+    border: 1px solid #E8E8E8;
+
+}
+.g_lists_li .name_list .gdname{
+    display: inline-block;
+    width: 100px;
+    /*height: 50px;*/
+    float: left;
+    padding-left: 10px;
+    /*padding-right: 215px;*/
+}
+.g_lists_li .off_shelf{
+    display:inline-block;
+    float: right;
+    height: 35px;
+    line-height: 35px;
+    padding-top: 10px;
+    padding-right:50px;
+    color: #CBB7BB;
+}
+.g_lists_li .price_list{
+    height: 40px;
+    width: 70px;
+    /* padding-right: 50px; */
+    padding-top: 10px;
+    /*padding-right: 50px;*/
+
+}
+.g_lists_li .num_list{
+    width: 162px;
+    height: 40px;
+    padding-left: 13px;
+    padding-top: 10px;
+}
+.g_lists_li .total_list{
+    width: 124px;
+    height: 40px;
+    padding-top: 10px;
+}
+.num_list .operationBox{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    border: 1px solid #E8E8E8;
+}
+.num_list .add:hover{
+    color: #FF2D4B;
+    border-color: #FF2D4B;
+}
+.num_list .subtract{
+
+}
+.num_list .num_input{
+    width: 41px;
+    height: 21px;
+    line-height: 17px\9;
+    text-align: center;
+    padding:1px;
+    border: 1px solid #E8E8E8;
+}
+
+.ns{
+    width: 110px;
+}
+.ns .cl,
+.ns .mv{
+    color:#cccccc;
+    cursor: pointer;
+}
+
+.ns .mv:hover{
+    color: #FF2D4B;
+    text-decoration: underline;
+}
+.ns .cl:hover{
+    color: #FF2D4B;
+    text-decoration: underline;
+}
+#all_goods {
+    float: left;
+}
+.all_lists_info {
+    text-align: right;
+    font-family: "microsoft yahei";
+    margin: 20px 0;
+    width: 100%;
+    background-color: #FCFAFA;
+    position: relative;
+    border-bottom: 1px solid #E8E8E8;
+    border-top: 1px solid #E8E8E8;
+    float: left;
+}
+.all_lists_info .userOp {
+ padding: 15px 0;
+}
+.chAll {
+    width: 69px;
+    height: 40px;
+    padding-left: 50px;
+    line-height: 40px;
+    background-color: #333;
+    text-align: left;
+    font:14px/40px "microsoft yahei";
+    color:#fff;
+    position: relative;
+}
+.chAll .c_box{
+    position: absolute;
+    top: 13px;
+    left: 23px;
+}
+.canc{
+    width: 65px;
+    padding-right: 10px;
+    height: 40px;
+    text-align: right;
+    font:14px/40px "microsoft yahei";
+    color:#CCCCCC;
+    background: url("../images/trash.png") no-repeat 19px 12px;
+    cursor: pointer;
+}
+.w_line{
+    width: 1px;
+    height: 20px;
+    background-color: #E8E8E8;
+    margin-top: 10px;
+    /*margin-left: 10px;*/
+}
+.cllo{
+    width: 95px;
+    height: 40px;
+    text-align: right;
+    padding-left: 10px;
+    font: 14px/40px "microsoft yahei";
+    color: #CCCCCC;
+    background: url("../images/coll.png") no-repeat 12px 13px;
+    cursor: pointer;
+}
+.canc:hover,.cllo:hover{
+    color: #FF2D4B;
+}
+
+.all_lists_info .cgfo{
+    /*width: 300px;*/
+    // height: 40px;
+    // line-height: 40px;
+}
+.allNum{
+    height: 40px;
+    color: #CBCBCB;
+    padding-right: 6px;
+    font: 14px/40px "microsoft yahei";
+    padding: 15px 0;
+
+}
+.allNum i{
+    color: #FF2D4B;
+    padding:0 8px;
+    font: 24px/30px "microsoft yahei";
+
+}
+.allCredits{
+    height: 40px;
+    color: #FFDD00;
+    font-size: 14px;
+    font: 14px/40px "microsoft yahei";
+    padding: 15px 0;
+}
+.cg_line {
+    width: 1px;
+    height: 20px;
+    background-color: #E8E8E8;
+    margin-top: 24px;
+    margin-left: 10px;
+    margin-right: 3px;
+}
+.allCredits i{
+    color: #FFDD00;
+    font: 18px/30px "microsoft yahei";
+    padding:0 5px;
+}
+.g_lists .payment{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    font: 14px/40px "microsoft yahei";
+    margin: 15px 10px;
+    // margin-top:15px;
+    // margin-bottom:15px;
+    // margin-left: 10px;
+
+    text-align: center;
+    background-color: #FF2D4B;
+    color: #fff;
+    cursor: pointer;
+}
+.remain_credits{
+    position: absolute;
+    bottom: -30px;
+    right: 7px;
+    height: 30px;
+    line-height: 30px;
+    color: #FF5D69;
+    font:12px/30px "microsoft yahei";
+    display: none;
+}
+
+.g_lists_li .checkbox,.chAll .checkboxall{
+    background:url(../../images/checkbox_bg.png) no-repeat center center;
+    display: inline-block;
+    width:15px;
+    height: 15px;
+    cursor: pointer;
+}
+.g_lists_li .checkbox.active,.chAll .checkboxall.active{
+    background:url(../../images/checkbox_bg_act.png) no-repeat center center;
+}
+
+/*个人中心购物车页面为空*/
+.p_main .no-goods{
+    display: none;
+}
+.pro-infos{
+    width: 100%;
+    height: 500px;
+}
+
+#infos-t{
+    padding-left: 419px;
+    padding-top: 168px;
+    font: 14px "microsoft yahei";
+    background: url("../../images/noord_cart.png") no-repeat 320px 127px;
+
+}
+#infos-t .c-shop {
+    padding-top: 10px;
+}
+#infos-t .c-shop a{
+    font: 14px "microsoft yahei";
+    color:#ff2d4b;
+}
+#infos-t .c-shop a:hover{
+    text-decoration: underline;
+}
+/*个人中心我的购物车遮罩层*/
+.ks-dialog-mask {
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    position: fixed;
+    -webkit-user-select: none;
+    z-index: 1000;
+    background: #000;
+    background: rgba(0,0,0,.6);
+    -ms-filter: "alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    z-index: 1000;
+    display: none;
+}
+/*个人中心我的购物车点击全部删除按钮弹出层的css*/
+.cart-dialog{
+    width: 454px;
+    height: 235px;
+    position:fixed;
+    top:200px;
+    left:50%;
+    background-color:#fff;
+    margin-left:-227px;
+    z-index:1500;
+    display: none;
+    font: 12px "microsoft yahei";
+    color: #655B5D;
+    overflow: hidden;
+    zoom: 1;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.cart-dialog .dialog-titile{
+    width: 434px;
+    height: 49px;
+    font:14px/49px "microsoft yahei";
+    padding-left:20px;
+    border-bottom:1px solid #E8E8E8;
+    color:#FF2D4B;
+    background-color: #F9F7F8;
+}
+.cart-dialog #c_close{
+    float: right;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: -1px;
+    top: 0px;
+    background: url("../images/addClose.png") no-repeat;
+    cursor: pointer;
+}
+.cart-dialog .p-text{
+    padding-top: 30px;
+    height: 30px;
+    font:12px/30px "microsoft yahei";
+    text-align: center;
+}
+
+.cart-dialog .p-btns{
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.cart-dialog .p-btns .sub-btn1,
+.cart-dialog .p-btns .can-btn1 {
+    font:12px/30px "microsoft yahei";
+    width: 100px;
+    height: 30px;
+    background-color:#FF2D4B;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.p-btns .can-btn1:hover{
+    color:#fff;
+}
+.p-btns .sub-btn1:hover{
+    color:#fff;
+}
+
+/*个人中心我的购物车当没有选择商品时，用户点击全部删除按钮弹出提示框css*/
+.promote-dialog{
+    width: 454px;
+    height:140px;
+    position:fixed;
+    top:200px;
+    left:50%;
+    background-color:#fff;
+    margin-left:-227px;
+    z-index:1501;
+    display: none;
+    font: 12px "microsoft yahei";
+    color: #655B5D;
+    overflow: hidden;
+    zoom: 1;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.promote-dialog .prom-titile{
+    width: 434px;
+    height: 49px;
+    font:14px/49px "microsoft yahei";
+    padding-left:20px;
+    border-bottom:1px solid #E8E8E8;
+    color:#FF2D4B;
+    background-color: #F9F7F8;
+}
+
+.promote-dialog .p-text{
+    padding-top: 30px;
+    height: 30px;
+    font:14px/30px "microsoft yahei";
+    text-align: center;
+}
+/*个人中心我的购物车，单行删除弹出层*/
+.cart-preDialog{
+    width: 454px;
+    height: 235px;
+    position:fixed;
+    top:200px;
+    left:50%;
+    background-color:#fff;
+    margin-left:-227px;
+    z-index:1500;
+    display: none;
+    font: 12px "microsoft yahei";
+    color: #655B5D;
+    overflow: hidden;
+    zoom: 1;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.cart-preDialog .preDialog-titile{
+    width: 434px;
+    height: 49px;
+    font:14px/49px "microsoft yahei";
+    padding-left:20px;
+    border-bottom:1px solid #E8E8E8;
+    color:#FF2D4B;
+    background-color: #F9F7F8;
+}
+/*层上的按钮*/
+.cart-preDialog #e_close,.promote-dialog #d_close,.moveColl-dialog #f_close,.preMoveColl-dialog #pre_close{
+    float: right;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: -1px;
+    top: 0px;
+    background: url("../images/addClose.png") no-repeat;
+    cursor: pointer;
+}
+
+.cart-preDialog .p-text{
+    padding-top: 30px;
+    height: 30px;
+    font:12px/30px "microsoft yahei";
+    text-align: center;
+}
+
+.cart-preDialog .p-btns{
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.cart-preDialog .p-btns .sub-btn2,
+.cart-preDialog .p-btns .can-btn2 {
+    font:12px/30px "microsoft yahei";
+    width: 100px;
+    height: 30px;
+    background-color:#FF2D4B;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.cart-preDialog .p-btns .can-btn2:hover,.cart-preDialog .p-btns .sub-btn2:hover{
+    color:#fff;
+}
+
+/*点击底部移入收藏夹按钮弹出框*/
+.moveColl-dialog{
+    width: 454px;
+    height: 235px;
+    position:fixed;
+    top:200px;
+    left:50%;
+    background-color:#fff;
+    margin-left:-227px;
+    z-index:1500;
+    display: none;
+    font: 12px "microsoft yahei";
+    color: #655B5D;
+    overflow: hidden;
+    zoom: 1;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.moveColl-dialog .moveColl-titile{
+    width: 434px;
+    height: 49px;
+    font:14px/49px "microsoft yahei";
+    padding-left:20px;
+    border-bottom:1px solid #E8E8E8;
+    color:#FF2D4B;
+    background-color: #F9F7F8;
+}
+
+.moveColl-dialog .p-text{
+    padding-top: 30px;
+    height: 30px;
+    font:16px/30px "microsoft yahei";
+    text-align: center;
+    color:#FF2D4B;
+}
+.moveColl-dialog .ftx{
+    padding-top: 0px;
+    height: 25px;
+    font:12px/25px "microsoft yahei";
+    text-align: center;
+}
+.moveColl-dialog .p-btns{
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.moveColl-dialog .p-btns .sub-btn3,
+.moveColl-dialog .p-btns .can-btn3 {
+    font:12px/30px "microsoft yahei";
+    width: 100px;
+    height: 30px;
+    background-color:#FF2D4B;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.p-btns .can-btn3:hover,.p-btns .sub-btn3:hover{
+    color:#fff;
+}
+
+/*点击每行收藏夹按钮*/
+.preMoveColl-dialog{
+    width: 454px;
+    height: 235px;
+    position:fixed;
+    top:200px;
+    left:50%;
+    background-color:#fff;
+    margin-left:-227px;
+    z-index:1500;
+    display: none;
+    font: 12px "microsoft yahei";
+    color: #655B5D;
+    overflow: hidden;
+    zoom: 1;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.preMoveColl-dialog .preMoveColl-titile{
+    width: 434px;
+    height: 49px;
+    font:14px/49px "microsoft yahei";
+    padding-left:20px;
+    border-bottom:1px solid #E8E8E8;
+    color:#FF2D4B;
+    background-color: #F9F7F8;
+}
+
+.preMoveColl-dialog .p-text{
+    padding-top: 30px;
+    height: 30px;
+    font:16px/30px "microsoft yahei";
+    text-align: center;
+    color:#FF2D4B;
+}
+.preMoveColl-dialog .ftx-1{
+    padding-top: 0px;
+    height: 25px;
+    font:12px/25px "microsoft yahei";
+    text-align: center;
+}
+.preMoveColl-dialog .p-btns{
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+.preMoveColl-dialog .p-btns .sub-btn4,
+.preMoveColl-dialog .p-btns .can-btn4 {
+    font:12px/30px "microsoft yahei";
+    width: 100px;
+    height: 30px;
+    background-color:#FF2D4B;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.p-btns .can-btn4:hover,.p-btns .sub-btn4:hover{
+    color:#fff;
+}
+
